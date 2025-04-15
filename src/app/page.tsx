@@ -1,4 +1,6 @@
 import Image from "next/image";
+// @ts-ignore
+import { Card } from "../RedDot/src/components/Card";
 
 export default function Home() {
   return (
@@ -12,6 +14,11 @@ export default function Home() {
           height={38}
           priority
         />
+
+        <Card>
+          <p>Card content</p>
+        </Card>
+
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
